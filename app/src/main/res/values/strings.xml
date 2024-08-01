@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Helo</string>
+    <string name="menu_item_logout">Logout</string>
+    <string name="app_logo">app_logo</string>
+    <string name="login_string">Login</string>
+    <string name="password_string">Password</string>
+    <string name="login_button">Login</string>
+    <string name="forgot_password_string">Forgot password</string>
+    <string name="register_string">Register</string>
+    <string name="is_online">is_online</string>
+    <string name="button_register">Sign up</string>
+    <string name="your_email_string">Your email</string>
+    <string name="reset_password">Reset password</string>
 </resources>
