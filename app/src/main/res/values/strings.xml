@@ -11,4 +11,9 @@
     <string name="button_register">Sign up</string>
     <string name="your_email_string">Your email</string>
     <string name="reset_password">Reset password</string>
+    <string name="enter_the_code_from_email">Enter the code from email</string>
+    <string name="verify_code">Verify code</string>
+    <string name="repeat_password_string">Repeat password</string>
+    <string name="save_password">Save password</string>
+    <string name="the_reset_link_sent">The reset link has been successfully sent</string>
 </resources>
