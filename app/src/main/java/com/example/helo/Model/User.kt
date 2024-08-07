@@ -1,8 +1,12 @@
 package com.example.helo.Model
 
 data class User(
-    val email: String,
-    val name: String,
-    val lastName: String,
-    val age: Int
-)
+    val id: String = "",
+    val name: String = "",
+    val lastName: String = "",
+    val age: Int = 0,
+    val isOnline: Boolean = true
+){
+
+}
+
