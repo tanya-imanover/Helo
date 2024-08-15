@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         tools:text = "message message message sage message message message message message"
         android:maxWidth="250dp"
-        android:background="@drawable/my_message_background"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/other_message_background"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

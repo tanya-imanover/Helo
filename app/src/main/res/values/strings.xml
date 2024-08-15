@@ -16,4 +16,5 @@
     <string name="repeat_password_string">Repeat password</string>
     <string name="save_password">Save password</string>
     <string name="the_reset_link_sent">The reset link has been successfully sent</string>
+    <string name="type_your_message">Type your message</string>
 </resources>

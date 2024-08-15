@@ -42,6 +42,20 @@ class UsersActivity : AppCompatActivity() {
 
         adapter = UsersAdapter()
         binding.recyclerViewUsers.adapter = adapter
+        adapter.setOnUserClickListener(object : UsersAdapter.OnUserClickListener{
+            override fun onUserClick(user: User) {
+                viewModel.getUser().value?.uid?.let {
+                    startActivity(
+                        ChatActivity.getIntent(
+                            this@UsersActivity,
+                            it,
+                            user.id
+                        )
+                    )
+                }
+            }
+
+        })
         viewModel = ViewModelProvider(this@UsersActivity)[UsersViewModel::class.java]
         observeViewModel()
     }
@@ -73,6 +87,16 @@ class UsersActivity : AppCompatActivity() {
             viewModel.logout()
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        viewModel.setUserIsOnline(true)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        viewModel.setUserIsOnline(false)
     }
 
     override fun onDestroy() {

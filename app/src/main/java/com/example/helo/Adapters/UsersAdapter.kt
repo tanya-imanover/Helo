@@ -39,7 +39,7 @@ class UsersAdapter : RecyclerView.Adapter<UsersAdapter.UserViewHolder>(){
         val userName = "${user.name} ${user.lastName}"
         holder.textViewUserName.text = userName
         holder.statusView.background =
-            if(user.isOnline){
+            if(user.online){
                 ContextCompat.getDrawable(holder.itemView.context, R.drawable.circle_green)
             }
             else {

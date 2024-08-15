@@ -5,7 +5,7 @@ data class User(
     val name: String = "",
     val lastName: String = "",
     val age: Int = 0,
-    val isOnline: Boolean = true
+    val online: Boolean = true
 ){
 
 }
